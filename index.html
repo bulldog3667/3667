@@ -44,14 +44,20 @@
             display: flex;
             flex-wrap: wrap;
             gap: 10px;
+            flex-direction: column;
         }
         .links a {
             text-decoration: none;
-            color: blue;
             font-weight: bold;
         }
-        .links a:hover {
+        .links a.download {
             color: red;
+        }
+        .links a.power {
+            color: blue;
+        }
+        .links a:hover {
+            color: darkred;
         }
     </style>
 </head>
@@ -66,23 +72,17 @@
     <div class="section">
         <h2>推荐章节</h2>
         <div class="links">
-            <a href="#">仆政玩具第三章[发电] → 这里下载 ←</a>
-            <a href="#">女神和mm中篇[发电] → 这里下载 ←</a>
-            <a href="#">战神赘婿合集[发电] → 这里下载 ←</a>
+            <a href="www.baidu.com">仆政玩具第三章 [发电]</a> → <a href="www.bilibili.com">这里下载 ←</a>
+            <a href="https://example.com/power2" class="power">女神和mm中篇 [发电]</a> → <a href="https://example.com/download2" class="download">这里下载 ←</a>
+            <a href="https://example.com/power3" class="power">战神赘婿合集 [发电]</a> → <a href="https://example.com/download3" class="download">这里下载 ←</a>
         </div>
     </div>
     <div class="section">
         <h2>战神赘婿</h2>
         <div class="links">
-            <a href="#">P2[发电] → 这里下载 ←</a>
-            <a href="#">P3[发电] → 这里下载 ←</a>
-            <a href="#">P4[发电] → 这里下载 ←</a>
-            <a href="#">P5[发电] → 这里下载 ←</a>
-            <a href="#">P6[发电] → 这里下载 ←</a>
-            <a href="#">P7[发电] → 这里下载 ←</a>
-            <a href="#">P8[发电] → 这里下载 ←</a>
-            <a href="#">P9[发电] → 这里下载 ←</a>
-            <a href="#">合集[发电] → 这里下载 ←</a>
+            <a href="https://example.com/power4" class="power">P2 [发电]</a> → <a href="https://example.com/download4" class="download">这里下载 ←</a>
+            <a href="https://example.com/power5" class="power">P3 [发电]</a> → <a href="https://example.com/download5" class="download">这里下载 ←</a>
+            <a href="https://example.com/power6" class="power">P4 [发电]</a> → <a href="https://example.com/download6" class="download">这里下载 ←</a>
         </div>
     </div>
 </body>
