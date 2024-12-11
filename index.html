@@ -36,15 +36,23 @@
         }
         .section h2 {
             margin: 0 0 10px 0;
-            color: green;
+            color: red; /* 设置标题文字颜色为红色 */
+            text-align: center; /* 仅居中显示标题 */
             border-bottom: 2px solid lightgreen;
             padding-bottom: 5px;
         }
         .links {
             display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
-            flex-direction: column;
+            flex-wrap: wrap; /* 允许元素换行 */
+            gap: 10px; /* 元素之间的间隙 */
+        }
+        .links > div {
+            width: 19%; /* 设置每个章节宽度为 19%，一行最多显示5个 */
+            box-sizing: border-box;
+            padding: 10px;
+            border: 1px solid #ddd;
+            background: #f9f9f9;
+            text-align: center; /* 让每个章节的文字居中 */
         }
         .links a {
             text-decoration: none;
@@ -69,21 +77,83 @@
         <li>【收藏】本页防失联不迷路！</li>
         <li><span style="color: purple;">【原创不易，喜欢请支持】</span></li>
     </ul>
+    
+    <!-- 第一个推荐章节 -->
     <div class="section">
         <h2>推荐章节</h2>
         <div class="links">
-            <a href="https://www.baidu.com" class="power">杯子-第一章 【发电】</a>  <a href="https://www.bilibili.com" class="download">【下载】 </a>
-            <a href="https://example.com/power2" class="power">杯子-第二章 【发电】</a> <a href="https://example.com/download2" class="download">【下载】 </a>
-            <a href="https://example.com/power3" class="power">杯子-第三章 【发电】</a> <a href="https://example.com/download3" class="download">【下载】 </a>
+            <div>杯子-第一章
+                <a href="https://www.baidu.com" class="power">【发电】</a>
+                <a href="https://www.bilibili.com" class="download">【下载】</a>
+            </div>
+            <div>杯子-第二章
+                <a href="https://www.baidu.com" class="power">【发电】</a>
+                <a href="https://www.bilibili.com" class="download">【下载】</a>
+            </div>
+            <div>杯子-第三章
+                <a href="https://www.baidu.com" class="power">【发电】</a>
+                <a href="https://www.bilibili.com" class="download">【下载】</a>
+            </div>
+            <div>杯子-第四章
+                <a href="https://www.baidu.com" class="power">【发电】</a>
+                <a href="https://www.bilibili.com" class="download">【下载】</a>
+            </div>
+            <div>杯子-第五章
+                <a href="https://www.baidu.com" class="power">【发电】</a>
+                <a href="https://www.bilibili.com" class="download">【下载】</a>
+            </div>
+            <div>杯子-第六章
+                <a href="https://www.baidu.com" class="power">【发电】</a>
+                <a href="https://www.bilibili.com" class="download">【下载】</a>
+            </div>
+            <div>杯子-第七章
+                <a href="https://www.baidu.com" class="power">【发电】</a>
+                <a href="https://www.bilibili.com" class="download">【下载】</a>
+            </div>
+            <div>杯子-第八章
+                <a href="https://www.baidu.com" class="power">【发电】</a>
+                <a href="https://www.bilibili.com" class="download">【下载】</a>
+            </div>
+            <div>杯子-第九章
+                <a href="https://www.baidu.com" class="power">【发电】</a>
+                <a href="https://www.bilibili.com" class="download">【下载】</a>
+            </div>
+            <div>杯子-第十章
+                <a href="https://www.baidu.com" class="power">【发电】</a>
+                <a href="https://www.bilibili.com" class="download">【下载】</a>
+            </div>
         </div>
     </div>
-    <div class="section">
-        <h2>未命名</h2>
+
+
+   <!--   <div class="section">
+        <h2>推荐章节</h2>
         <div class="links">
-            <a href="https://example.com/power4" class="power">P2 【发电】</a> → <a href="https://example.com/download4" class="download">【下载】 ←</a>
-            <a href="https://example.com/power5" class="power">P3 【发电】</a> → <a href="https://example.com/download5" class="download">【下载】 ←</a>
-            <a href="https://example.com/power6" class="power">P4 【发电】</a> → <a href="https://example.com/download6" class="download">【下载】 ←</a>
+            <div>杯子-第七章
+                <a href="https://www.baidu.com" class="power">【发电】</a>
+                <a href="https://www.bilibili.com" class="download">【下载】</a>
+            </div>
+            <div>杯子-第八章
+                <a href="https://www.baidu.com" class="power">【发电】</a>
+                <a href="https://www.bilibili.com" class="download">【下载】</a>
+            </div>
+            <div>杯子-第九章
+                <a href="https://www.baidu.com" class="power">【发电】</a>
+                <a href="https://www.bilibili.com" class="download">【下载】</a>
+            </div>
+            <div>杯子-第十章
+                <a href="https://www.baidu.com" class="power">【发电】</a>
+                <a href="https://www.bilibili.com" class="download">【下载】</a>
+            </div>
+            <div>杯子-第十一章
+                <a href="https://www.baidu.com" class="power">【发电】</a>
+                <a href="https://www.bilibili.com" class="download">【下载】</a>
+            </div>
+            <div>杯子-第十二章
+                <a href="https://www.baidu.com" class="power">【发电】</a>
+                <a href="https://www.bilibili.com" class="download">【下载】</a>
+            </div>
         </div>
-    </div>
+    </div>-->
 </body>
 </html>
