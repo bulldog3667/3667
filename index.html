@@ -3,36 +3,87 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>在线购买网页</title>
+    <title>类似下载网页</title>
     <style>
         body {
             font-family: Arial, sans-serif;
+            line-height: 1.8;
+            padding: 20px;
+            color: #333;
+        }
+        h1 {
+            color: green;
             text-align: center;
-            padding: 50px;
         }
-        .button {
-            padding: 10px 20px;
-            font-size: 16px;
-            cursor: pointer;
-            background-color: #4CAF50;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            margin: 10px;
+        .instructions {
+            list-style: none;
+            padding: 0;
+            margin-bottom: 20px;
         }
-        .button:hover {
-            background-color: #45a049;
+        .instructions li {
+            margin: 10px 0;
+            color: black;
+        }
+        .instructions li span {
+            color: red;
+            font-weight: bold;
+        }
+        .section {
+            margin: 30px 0;
+            padding: 10px;
+            border: 2px solid lightgreen;
+            background: #f9f9f9;
+        }
+        .section h2 {
+            margin: 0 0 10px 0;
+            color: green;
+            border-bottom: 2px solid lightgreen;
+            padding-bottom: 5px;
+        }
+        .links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .links a {
+            text-decoration: none;
+            color: blue;
+            font-weight: bold;
+        }
+        .links a:hover {
+            color: red;
         }
     </style>
 </head>
 <body>
-    <h1>欢迎来到我们的在线购买页面！</h1>
-    <p>点击下方按钮购买或下载内容：</p>
-
-    <!-- 在购买按钮前添加一段文本 -->
-    <p>第一章：</p>
-    
-    <button class="button" onclick="window.location.href='https://www.baidu.com/'">购买</button>
-    <button class="button" onclick="window.location.href='https://www.bilibili.com/'">下载</button>
+    <h1>下载页面</h1>
+    <ul class="instructions">
+        <li>点击需要解锁的项目，填写正确的邮箱下单，将邮箱收到的 <span>【密码】</span> 输入到 <span>【下载】</span> 即可！</li>
+        <li>未收到邮箱点此 <a href="#">【查询订单】</a></li>
+        <li>【收藏】本页防失联不迷路！</li>
+        <li><span style="color: purple;">【原创不易，喜欢请支持】</span></li>
+    </ul>
+    <div class="section">
+        <h2>推荐章节</h2>
+        <div class="links">
+            <a href="#">仆政玩具第三章[发电] → 这里下载 ←</a>
+            <a href="#">女神和mm中篇[发电] → 这里下载 ←</a>
+            <a href="#">战神赘婿合集[发电] → 这里下载 ←</a>
+        </div>
+    </div>
+    <div class="section">
+        <h2>战神赘婿</h2>
+        <div class="links">
+            <a href="#">P2[发电] → 这里下载 ←</a>
+            <a href="#">P3[发电] → 这里下载 ←</a>
+            <a href="#">P4[发电] → 这里下载 ←</a>
+            <a href="#">P5[发电] → 这里下载 ←</a>
+            <a href="#">P6[发电] → 这里下载 ←</a>
+            <a href="#">P7[发电] → 这里下载 ←</a>
+            <a href="#">P8[发电] → 这里下载 ←</a>
+            <a href="#">P9[发电] → 这里下载 ←</a>
+            <a href="#">合集[发电] → 这里下载 ←</a>
+        </div>
+    </div>
 </body>
 </html>
